@@ -1,0 +1,13 @@
+name: nmap
+version: 1
+vendor: William Grant <wgrant@ubuntu.com>
+summary: The Network Mapper
+description: The Network Mapper
+icon: icon.png
+
+parts:
+  nmap:
+    plugin: copy
+    files: {}
+    stage-packages:
+      - nmap
