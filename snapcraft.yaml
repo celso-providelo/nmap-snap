@@ -4,6 +4,9 @@ vendor: William Grant <wgrant@ubuntu.com>
 summary: The Network Mapper
 description: The Network Mapper
 icon: icon.png
+binaries:
+  - exec: nmap
+    name: usr/bin/nmap
 
 parts:
   nmap:
