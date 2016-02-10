@@ -5,8 +5,8 @@ summary: The Network Mapper
 description: The Network Mapper
 icon: icon.png
 binaries:
-  - exec: nmap
-    name: usr/bin/nmap
+  nmap:
+    exec: usr/bin/nmap
 
 parts:
   nmap:
