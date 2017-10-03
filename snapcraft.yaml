@@ -1,4 +1,4 @@
-name: nmap
+name: nmap-cprov
 version: 1
 vendor: William Grant <wgrant@ubuntu.com>
 summary: The Network Mapper
