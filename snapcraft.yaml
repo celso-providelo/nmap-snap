@@ -19,4 +19,4 @@ apps:
 parts:
   nmap:
     plugin: autotools
-    source: https://github.com/nmap/nmap.git
+    source: https://github.com/cprov/nmap.git
