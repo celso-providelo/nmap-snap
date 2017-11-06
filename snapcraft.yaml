@@ -1,16 +1,22 @@
 name: nmap-cprov
 version: 1
-vendor: William Grant <wgrant@ubuntu.com>
 summary: The Network Mapper
 description: The Network Mapper
-icon: icon.png
-binaries:
+confinement: strict
+grade: stable
+
+apps:
   nmap:
-    exec: usr/bin/nmap
+    command: bin/nmap
+    plugs: [network-bind, network]
+  ncat:
+    command: bin/ncat
+    plugs: [network-bind, network]
+  nping:
+    command: bin/nping
+    plugs: [network-bind, network]
 
 parts:
   nmap:
-    plugin: copy
-    files: {}
-    stage-packages:
-      - nmap
+    plugin: autotools
+    source: https://github.com/nmap/nmap.git
